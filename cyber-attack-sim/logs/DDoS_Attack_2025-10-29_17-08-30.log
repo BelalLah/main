@@ -1,0 +1,26 @@
+============================================================
+Attack Type: DDoS
+Timestamp: 2025-10-29_17-08-30
+Attacker: Control Center (172.20.0.5)
+Target: Victim Server (172.20.0.10)
+============================================================
+
+[17:08:20] 🔴 ATTACK INITIATED: DDoS (Distributed Denial of Service)
+[17:08:20] Attacker: Control Center (172.20.0.5)
+[17:08:20] Target: Victim Server (172.20.0.10:5000)
+[17:08:20] Attack Method: SYN Flood
+[17:08:20] Wave 1/5: Generating packet flood...
+[17:08:20] Wave 1 Results: 100 packets delivered, 0 dropped
+[17:08:22] Wave 2/5: Generating packet flood...
+[17:08:22] Wave 2 Results: 100 packets delivered, 0 dropped
+[17:08:22] ⚠️  ALERT: Target firewall detecting unusual traffic patterns
+[17:08:24] Wave 3/5: Generating packet flood...
+[17:08:24] Wave 3 Results: 100 packets delivered, 0 dropped
+[17:08:24] 🛡️  DEFENSE: Rate limiting activated on target server
+[17:08:26] Wave 4/5: Generating packet flood...
+[17:08:26] Wave 4 Results: 100 packets delivered, 0 dropped
+[17:08:26] 🛡️  DEFENSE: IDS signature match - implementing IP blacklist
+[17:08:28] Wave 5/5: Generating packet flood...
+[17:08:28] Wave 5 Results: 100 packets delivered, 0 dropped
+[17:08:30] 📊 Attack Summary: 500 packets sent, 0 failed (100.0% success rate)
+[17:08:30] ⚠️  RESULT: Partial service disruption achieved
